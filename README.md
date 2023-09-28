@@ -39,6 +39,7 @@ podman run -it docker.io/openos365/openos365-10019-opensuse-leap-15-2-docker-mai
 
 sudo podman run -it \
 --cap-add=ALL \
+--privileged=true \
 --tmpfs /tmp \
 --tmpfs /run \
 -v /etc/resolv.conf:/etc/resolv.conf \
